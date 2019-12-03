@@ -14,4 +14,4 @@ model.summary()
 
 model.fit(X_train_fit, y_train, epochs=2, batch_size=128, verbose=1, validation_split=0.33)
 scores = model.evaluate(vectorizer.transform(X_test), y_test, verbose=1)
-print("Accuracy:", scores[1]) 
+print("Accuracy:", scores[1])
