@@ -20,8 +20,8 @@ print (accuracy)
 """
 from sklearn.model_selection import GridSearchCV
 parameters = [{
-        'C': [.001, .01, .1, .5],
-        'penalty': ['l1', 'l2']
+        'C': [.00001, .5, 10, 50, 100, 1000],
+        'penalty': ['l1']
         }]
 grid_search = GridSearchCV(estimator = model,
                           param_grid = parameters,
@@ -34,3 +34,5 @@ best_parameters = grid_search.best_params_
 
 print ('Best Accuacy: ', best_accuracy)
 print ('Best Parameters: ', best_parameters)
+"""
+
