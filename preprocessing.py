@@ -42,7 +42,7 @@ def clean_text(text):
 
 def vectorizer(X_train):
     vectorizer = CountVectorizer(binary=True, stop_words=stopwords.words('english'), 
-                             lowercase=True, max_features=5000)
+                             lowercase=True, max_features=5000, ngram_range=(1,2))
     X_train_fit = vectorizer.fit_transform(X_train)
     return X_train_fit, vectorizer
 

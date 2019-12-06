@@ -2,7 +2,7 @@ from sklearn.naive_bayes import MultinomialNB
 from preprocessing import preprocessing
 from sklearn.model_selection import GridSearchCV
 
-X_train, X_test, y_train, y_test, X_train_fit, vectorizer = preprocessing()
+X_train, X_test, y_train, y_test, X_train_fit, vectorizer = preprocessing(True)
 clf = MultinomialNB()
 alpha = [0.0, 0.25, 0.5, 0.75, 1.0, 5.0, 10.0]
 param_grid = dict(alpha=alpha)

@@ -4,7 +4,7 @@ from keras.layers import Dense
 from keras.layers import Dropout
 from keras.constraints import maxnorm
 
-X_train, X_test, y_train, y_test, X_train_fit, vectorizer = preprocessing()
+X_train, X_test, y_train, y_test, X_train_fit, vectorizer = preprocessing(False)
  
 model = Sequential()
 

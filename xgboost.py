@@ -1,6 +1,6 @@
 from preprocessing import preprocessing
 
-X_train, X_test, y_train, y_test, X_train_fit, vectorizer = preprocessing()
+X_train, X_test, y_train, y_test, X_train_fit, vectorizer = preprocessing(False)
 
 y_train = y_train.astype('int')
 
