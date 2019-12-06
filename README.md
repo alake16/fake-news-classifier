@@ -3,6 +3,14 @@
 ## Summary
 Exploration of multiple ML algorithms for detecting fake news in the real world.
 
+## Usage
+To train a given model implementation, simply run the following:
+``` bash
+python3 [MODEL_NAME.py]
+```
+
+To run the tuning experiments on a given model, navigate to the appropriate file and uncomment the grid search logic, then run the same script above.
+
 ## Dataset
 The two datasets used to create the larger news dataset were both found on Kaggle.com. The kernel where the combining of the two datasets was can be found [Here](https://www.kaggle.com/anthonyc1/fake-news-classifier-final-project "Here")
 
