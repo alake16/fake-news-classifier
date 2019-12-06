@@ -8,6 +8,7 @@ The two datasets used to create the larger news dataset were both found on Kaggl
 
 ## Preprocessing
 The preprocessing tasks involved with the news dataset include:
+
 * Dropping unused/unnecessary features for our task
 	* Abritrary ID
 	* Publication address
@@ -24,11 +25,13 @@ The preprocessing tasks involved with the news dataset include:
 
 ## Models
 The following algorithms were used to train a model: 
+
 * Neural Networks
 	* Shallow (no hidden layers)
 	* Deep (multiple hidden layers)
 * Logistic Regression
 * Naive Bayes
 * XGBoost
+
 Each model implementation is trained on uniform training and testing datasets. Each model is also tuned for the given hyperparameters that apply.
 
