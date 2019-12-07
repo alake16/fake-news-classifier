@@ -14,9 +14,12 @@ from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test.astype('int'), y_pred)
 
 accuracy = (cm[0][0] + cm[1][1]) / (cm[0][0] + cm[1][1] + cm[0][1] + cm[0][1])
-print (accuracy)
-
-
+print("Accuracy: {}".format(accuracy))
+f = open("./performance/xgboost.txt", "w+")
+f.write("===== XGBoost Model =====\n")
+f.write("Accuracy: {}\n".format(accuracy))
+f.write("\n\n")
+f.close()
 # uncomment to perform grid search
 """
 from sklearn.model_selection import GridSearchCV

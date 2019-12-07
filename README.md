@@ -4,10 +4,12 @@
 Exploration of multiple ML algorithms for detecting fake news in the real world.
 
 ## Usage
-To train a given model implementation, simply run the following:
+To train a given model implementation and evaluate its performance, simply run the following:
 ``` bash
 python3 [MODEL_NAME.py]
 ```
+
+Model performance is then logged to a text file
 
 To run the tuning experiments on a given model, navigate to the appropriate file and uncomment the grid search logic, then run the same script above.
 

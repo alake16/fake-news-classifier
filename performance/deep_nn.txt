@@ -1,0 +1,5 @@
+===== Deep Neural Network Model =====
+loss: 0.2176149187106871
+accuracy: 0.9354454278945923
+
+

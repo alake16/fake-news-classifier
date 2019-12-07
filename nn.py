@@ -49,7 +49,12 @@ model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accurac
 
 model.fit(X_train_fit, y_train, epochs=epochs, batch_size=batch_size, verbose=1, validation_split=0.33)
 scores = model.evaluate(vectorizer.transform(X_test), y_test, verbose=1)
+f = open("./performance/nn.txt", "w+")
+f.write("===== Shallow Neural Network Model =====\n")
 i = 0
 for metric in model.metrics_names:
 	print("{}: {}".format(metric, scores[i]))
+	f.write("{}: {}\n".format(metric, scores[i]))
 	i += 1
+f.write("\n\n")
+f.close()

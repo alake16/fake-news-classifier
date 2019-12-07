@@ -15,6 +15,11 @@ cm = confusion_matrix(y_test.astype('int'), y_pred)
 
 accuracy = (cm[0][0] + cm[1][1]) / (cm[0][0] + cm[1][1] + cm[0][1] + cm[0][1])
 print("Accuracy on test set: {}".format(accuracy))
+f = open("./performance/lr.txt", "w+")
+f.write("===== Logistic Regression Model =====\n")
+f.write("Accuracy: {}\n".format(accuracy))
+f.write("\n\n")
+f.close()
 
 # uncomment to perform grid search
 """

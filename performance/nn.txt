@@ -1,0 +1,5 @@
+===== Shallow Neural Network Model =====
+loss: 0.17630655208716578
+accuracy: 0.9373511075973511
+
+
